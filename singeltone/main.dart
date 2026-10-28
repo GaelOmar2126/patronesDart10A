@@ -1,9 +1,8 @@
 import 'configuracion.dart';
 
 void main() {
-  final pantallaInicio = configuracion();
-
-  final pantallaPerfil = configuracion();
+  final pantallaInicio = Configuracion();
+  final pantallaPerfil = Configuracion();
 
   print('Idioma de la pantalla de inicio: ${pantallaInicio.idioma}');
   print('Idioma de la pantalla de perfil: ${pantallaPerfil.idioma}');
@@ -13,8 +12,7 @@ void main() {
   print('Idioma de la pantalla de inicio: ${pantallaInicio.idioma}');
   print('Idioma de la pantalla de perfil: ${pantallaPerfil.idioma}');
 
-  print( identical(pantallaInicio, pantallaPerfil)
-        ? 'Ambas pantallas comparten la misma instancia.'
-        : 'Las pantallas son instancias diferentes.',
-  );
+  print(identical(pantallaInicio, pantallaPerfil)
+      ? 'Ambas pantallas son la misma instancia.'
+      : 'Las pantallas son instancias diferentes.');
 }

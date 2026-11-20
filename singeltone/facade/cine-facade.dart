@@ -10,11 +10,11 @@ class CineFacade {
   // Constructor
   CineFacade(this._proyector, this._audio, this._reproductor);
 
-  void verPeliculas(String, Pelicula, int volumen) {
+  void verPeliculas(String pelicula, int volumen) {
     _proyector.encender();
     _audio.encender();
     _audio.ajustarVolumen(volumen);
-    _reproductor.reproducir(Pelicula);
+    _reproductor.reproducir(pelicula);
   }
 
 // Con facade se agrupan todos los llamados a clase y todos lo involucrados
